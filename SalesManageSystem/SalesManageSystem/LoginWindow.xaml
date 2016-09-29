@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesManageSystem"
         mc:Ignorable="d"
-        Title="登陆窗口" Height="520" Width="840">
+        Title="登陆窗口" Height="520" Width="840"
+        ResizeMode="NoResize">
     <Window.Background>
         <ImageBrush ImageSource="Assets/LoginWindowBackground.jpg"></ImageBrush>
     </Window.Background>
@@ -15,16 +16,21 @@
             <ColumnDefinition Width=" 2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Column="1">
-            <TextBlock Text="销售管理系统" FontSize="40" FontStyle="Normal" Margin="0,180,0,25"/>
+            <TextBlock Text="销售管理系统" FontSize="45" FontStyle="Normal" Margin="0,160,0,25"/>
             <StackPanel Orientation="Horizontal" Margin="40,0,0,0">
-                <TextBlock Text="用户名" FontSize="15" Margin="0,0,10,0"/>
-                <TextBox x:Name="userNameTextBox" Width="100" Text="薛中飞"></TextBox>
+                <TextBlock Text="用户名" FontSize="20" Margin="0,0,10,0"/>
+                <TextBox x:Name="userNameTextBox" Width="120" Text="薛中飞" ></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="40,5,0,0">
-                <TextBlock Text="密码" FontSize ="15" Margin="5,0,10,0"/>
-                <PasswordBox x:Name="passwordBox"   Password="123456"  Width="100" Margin="10,0,0,0"/>
+                <TextBlock Text="密码" FontSize ="20" Margin="5,0,10,0"/>
+                <PasswordBox x:Name="passwordBox"   Password="123456"  Width="120" Margin="15,0,0,0"/>
             </StackPanel>
-            <TextBlock Text="Powered by cohn." Margin="70,150,0,0" Foreground="DarkGray"/>
+            <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                <CheckBox  Margin="80,0,0,0"/>
+                <TextBlock Text="记住密码" Margin="10,0,0,0"/>
+            </StackPanel>
+            <Button Content="登陆" Background="#87CEFA" Margin="45,10,40,10" Click="LoginBtnClicked"/>
+            <TextBlock Text="Powered by cohn." Margin="90,100,0,0" Foreground="DarkGray"/>
         </StackPanel>
     </Grid>
 </Window>

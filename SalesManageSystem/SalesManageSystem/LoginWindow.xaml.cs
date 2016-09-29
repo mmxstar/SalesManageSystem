@@ -23,5 +23,14 @@ namespace SalesManageSystem
         {
             InitializeComponent();
         }
+
+        private void LoginBtnClicked(object sender, RoutedEventArgs e)
+        {
+            //do something check user
+            
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }
