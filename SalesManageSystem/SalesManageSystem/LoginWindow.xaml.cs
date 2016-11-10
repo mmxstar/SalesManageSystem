@@ -28,6 +28,8 @@ namespace SalesManageSystem
         {
             //do something check user
             
+
+            //show main window
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
