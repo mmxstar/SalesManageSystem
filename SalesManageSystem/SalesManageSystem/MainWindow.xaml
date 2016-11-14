@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesManageSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="主界面" Height="350" Width="500">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="currentItemName" Text="基础资料" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Image Source="Assets/s05.jpg"/>
+            <TextBlock Text="进销存销服管理系统" FontSize="20" Margin="10,3,0,0"/>
+        </StackPanel>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListBox SelectionChanged="ListBoxSelectionChanged">
+                <ListBoxItem Margin="0,10,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/s05.jpg" Width="20"/>
+                        <TextBlock Text="基础资料"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Margin="0,10,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/s05.jpg" Width="20"/>
+                        <TextBlock Text="进货管理"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Margin="0,10,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/s05.jpg" Width="20"/>
+                        <TextBlock Text="销售管理"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Margin="0,10,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/s05.jpg" Width="20"/>
+                        <TextBlock Text="库存管理"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <Frame x:Name="sceneFrame" Grid.Column="1"/>
+        </Grid>
+
     </Grid>
 </Window>
