@@ -14,3 +14,11 @@ E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SalesManageSystem.csproj.GenerateResource.Cache
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SalesManageSystem.exe
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SalesManageSystem.pdb
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\BasicInfoPage.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\InventoryManagementPage.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\PurchaseManagementPage.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SalesManagementPage.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\BasicInfoPage.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\InventoryManagementPage.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\PurchaseManagementPage.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SalesManagementPage.baml

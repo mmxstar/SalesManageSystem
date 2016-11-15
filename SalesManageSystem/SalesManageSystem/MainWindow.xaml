@@ -22,8 +22,8 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="4*"/>
             </Grid.ColumnDefinitions>
-
-            <ListBox SelectionChanged="ListBoxSelectionChanged">
+            <Frame x:Name="sceneFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+            <ListBox SelectionChanged="ListBoxSelectionChanged" SelectedIndex="0">
                 <ListBoxItem Margin="0,10,0,0">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Assets/s05.jpg" Width="20"/>
@@ -49,7 +49,7 @@
                     </StackPanel>
                 </ListBoxItem>
             </ListBox>
-            <Frame x:Name="sceneFrame" Grid.Column="1"/>
+           
         </Grid>
 
     </Grid>

@@ -31,12 +31,20 @@ namespace SalesManageSystem
             
             switch (listBox.SelectedIndex) {
                 case 0:
+                    sceneFrame.Content = new BasicInfoPage();
+                    currentItemName.Text = "基础资料";
                     break;
                 case 1:
+                    sceneFrame.Content = new PurchaseManagementPage();
+                    currentItemName.Text = "进货管理";
                     break;
                 case 2:
+                    sceneFrame.Content = new SalesManagementPage();
+                    currentItemName.Text = "销售管理";
                     break;
                 case 3:
+                    sceneFrame.Content = new InventoryManagementPage();
+                    currentItemName.Text = "库存管理";
                     break;
                 default:
                     break; 
