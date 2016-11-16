@@ -32,7 +32,8 @@ namespace SalesManageSystem
 
         private void wareHouseInfoBtnClicked(object sender, RoutedEventArgs e)
         {
-
+            WareHouseDefinitionWindow whdWindow = new WareHouseDefinitionWindow();
+            whdWindow.Show();
         }
 
         private void supplierInfoBtnClicked(object sender, RoutedEventArgs e)

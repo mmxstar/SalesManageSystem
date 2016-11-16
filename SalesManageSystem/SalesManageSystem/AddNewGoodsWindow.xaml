@@ -1,0 +1,92 @@
+﻿<Window x:Class="SalesManageSystem.AddNewGoodsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManageSystem"
+        mc:Ignorable="d"
+        Title="添加新货品" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="基本属性"/>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="货号："/>
+                    <TextBox x:Name="goodsNumTBox" Grid.Column="1"/>
+                    <TextBlock Text="类别：" Grid.Column="2"/>
+                    <TextBox x:Name="categoryTBox" Grid.Column="3"/>
+                    <TextBlock Text="条码：" Grid.Row="1"/>
+                    <TextBox x:Name="codeTBox" Grid.Row="1" Grid.Column="1"/>
+                    <TextBlock Text="名称：" Grid.Row="1" Grid.Column="2"/>
+                    <TextBox x:Name="nameTBox" Grid.Row="1" Grid.Column="3"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="价格属性："/>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <TextBlock Text="一级进价:"/>
+                    <TextBlock x:Name="firstLevelPurPriceTBox"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <TextBlock Text="二级进价:"/>
+                    <TextBlock x:Name="secondLevelPurPriceTBox"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <TextBlock Text="三级进价:"/>
+                    <TextBlock x:Name="thirdLevelPurPriceTBox"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Orientation="Horizontal">
+                    <TextBlock Text="一级销价:"/>
+                    <TextBlock x:Name="firstLevelSellingPriceTBox"/>
+                </StackPanel>
+                <StackPanel Grid.Row="5" Orientation="Horizontal">
+                    <TextBlock Text="二级销价:"/>
+                    <TextBlock x:Name="secondLevelSellingPriceTBox"/>
+                </StackPanel>
+                <StackPanel Grid.Row="6" Orientation="Horizontal">
+                    <TextBlock Text="三级销价:"/>
+                    <TextBlock x:Name="thirdLevelSellingPriceTBox"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button Content="确定" Click="ensureBtnClicked"/>
+            <Button Content="取消" Click="cancelBtnClicked"/>
+            <Button Content="清空" Click="clearBtnClicked"/>
+        </StackPanel>
+    </Grid>
+</Window>

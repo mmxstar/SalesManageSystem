@@ -22,3 +22,7 @@ E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\InventoryManagementPage.baml
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\PurchaseManagementPage.baml
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SalesManagementPage.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\CreateWareHouseWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\WareHouseDefinitionWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\CreateWareHouseWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\WareHouseDefinitionWindow.baml

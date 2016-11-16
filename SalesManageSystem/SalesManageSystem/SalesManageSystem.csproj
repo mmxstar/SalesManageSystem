@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddNewGoodsWindow.xaml.cs">
+      <DependentUpon>AddNewGoodsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateWareHouseWindow.xaml.cs">
+      <DependentUpon>CreateWareHouseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsInfoWindow.xaml.cs">
+      <DependentUpon>GoodsInfoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InventoryManagementPage.xaml.cs">
       <DependentUpon>InventoryManagementPage.xaml</DependentUpon>
     </Compile>
@@ -64,7 +73,23 @@
     <Compile Include="SalesManagementPage.xaml.cs">
       <DependentUpon>SalesManagementPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WareHouseDefinitionWindow.xaml.cs">
+      <DependentUpon>WareHouseDefinitionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XMLHelper.cs" />
+    <Page Include="AddNewGoodsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BasicInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateWareHouseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GoodsInfoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -99,6 +124,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SalesManagementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WareHouseDefinitionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

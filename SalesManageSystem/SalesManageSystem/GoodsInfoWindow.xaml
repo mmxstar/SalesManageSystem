@@ -1,0 +1,54 @@
+﻿<Window x:Class="SalesManageSystem.GoodsInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManageSystem"
+        mc:Ignorable="d"
+        Title="GoodsInfoWindow" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="货品资料" HorizontalAlignment="Center"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <TreeView >
+            </TreeView>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="编号"/>
+                    <TextBox x:Name="idTBox" Grid.Column="1"/>
+                    <TextBlock Text="名称" Grid.Column="2"/>
+                    <TextBox x:Name="nameTBox" Grid.Column="3"/>
+                    <Button Content="查询" Grid.Column="4"/>
+                    <TextBlock Text="条码" Grid.Row="1"/>
+                    <TextBox x:Name="codeTBox" Grid.Column="1" Grid.Row="1"/>
+                    <Button Content="清除" Grid.Column="4" Grid.Row="1"/>
+                </Grid>
+                <DataGrid Grid.Row="1">
+                    
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

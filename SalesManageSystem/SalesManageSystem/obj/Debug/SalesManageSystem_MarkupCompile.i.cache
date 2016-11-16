@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\App.xaml
-61071032149
+101234299877
 
-14-914408195
+19-483362204
 13738642453
-BasicInfoPage.xaml;InventoryManagementPage.xaml;LoginWindow.xaml;MainWindow.xaml;PurchaseManagementPage.xaml;SalesManagementPage.xaml;
+AddNewGoodsWindow.xaml;BasicInfoPage.xaml;CreateWareHouseWindow.xaml;GoodsInfoWindow.xaml;InventoryManagementPage.xaml;LoginWindow.xaml;MainWindow.xaml;PurchaseManagementPage.xaml;SalesManagementPage.xaml;WareHouseDefinitionWindow.xaml;
 
-False
+True
 
