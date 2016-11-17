@@ -16,5 +16,5 @@ E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\App.xaml
 13738642453
 AddNewCustomerWindow.xaml;AddNewGoodsWindow.xaml;AddNewSupplierWindow.xaml;BasicInfoPage.xaml;CreateWareHouseWindow.xaml;CustomerInfoWindow.xaml;GoodsInfoWindow.xaml;InventoryManagementPage.xaml;LoginWindow.xaml;MainWindow.xaml;PurchaseManagementPage.xaml;SalesManagementPage.xaml;SupplierInfoWindow.xaml;WareHouseDefinitionWindow.xaml;
 
-True
+False
 

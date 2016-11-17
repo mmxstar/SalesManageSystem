@@ -55,11 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddNewCustomerWindow.xaml.cs">
+      <DependentUpon>AddNewCustomerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddNewGoodsWindow.xaml.cs">
       <DependentUpon>AddNewGoodsWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddNewSupplierWindow.xaml.cs">
+      <DependentUpon>AddNewSupplierWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CreateWareHouseWindow.xaml.cs">
       <DependentUpon>CreateWareHouseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInfoWindow.xaml.cs">
+      <DependentUpon>CustomerInfoWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="GoodsInfoWindow.xaml.cs">
       <DependentUpon>GoodsInfoWindow.xaml</DependentUpon>
@@ -73,11 +82,22 @@
     <Compile Include="SalesManagementPage.xaml.cs">
       <DependentUpon>SalesManagementPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SupplierInfoWindow.xaml.cs">
+      <DependentUpon>SupplierInfoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WareHouseDefinitionWindow.xaml.cs">
       <DependentUpon>WareHouseDefinitionWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="XMLHelper.cs" />
+    <Page Include="AddNewCustomerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AddNewGoodsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddNewSupplierWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -86,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CreateWareHouseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomerInfoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SalesManagementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SupplierInfoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
