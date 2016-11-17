@@ -1,0 +1,110 @@
+﻿<Window x:Class="SalesManageSystem.AddNewCustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManageSystem"
+        mc:Ignorable="d"
+        Title="添加新客户" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="基本属性"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBlock Text="编号："/>
+            <TextBox x:Name="idTBox"/>
+            <TextBlock Text="类别:"/>
+            <TextBox x:Name="typeTBox"/>
+            <TextBlock Text="省市(县):"/>
+            <TextBox x:Name="provincesTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <TextBlock Text="名称："/>
+            <TextBox x:Name="nameTBox"/>
+            <TextBlock Text="联系人:"/>
+            <TextBox x:Name="contactsTBox"/>
+        </StackPanel>
+        <TextBlock Text="通讯信息" Grid.Row="3"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="4">
+            <TextBlock Text="邮编："/>
+            <TextBox x:Name="zipCodeTBox"/>
+            <TextBlock Text="收费标准:"/>
+            <TextBox x:Name="chargesTBox"/>
+            <TextBlock Text="地址:"/>
+            <TextBox x:Name="placesTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="5">
+            <TextBlock Text="电话："/>
+            <TextBox x:Name="phoneTBox"/>
+            <TextBlock Text="传真:"/>
+            <TextBox x:Name="faxTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="6">
+            <TextBlock Text="网址："/>
+            <TextBox x:Name="websiteTBox"/>
+            <TextBlock Text="邮箱:"/>
+            <TextBox x:Name="emailTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="7">
+            <TextBlock Text="手机："/>
+            <TextBox x:Name="cellphoneTBox"/>
+            <TextBlock Text="QQ:"/>
+            <TextBox x:Name="qqNumTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="8">
+            <TextBlock Text="MSN："/>
+            <TextBox x:Name="msnTBox"/>
+        </StackPanel>
+        <TextBlock Text="经营信息" Grid.Row="9"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="10">
+            <TextBlock Text="全称："/>
+            <TextBox x:Name="fullNameTBox"/>
+            <TextBlock Text="法人代表:"/>
+            <TextBox x:Name="legalRepresentativeTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="11">
+            <TextBlock Text="银行："/>
+            <TextBox x:Name="bankTBox"/>
+            <TextBlock Text="开户账号:"/>
+            <TextBox x:Name="accountTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="12">
+            <TextBlock Text="税号："/>
+            <TextBox x:Name="TaxTBox"/>
+            <TextBlock Text="开票地址:"/>
+            <TextBox x:Name="billingAddressTBox"/>
+        </StackPanel>
+        <TextBlock Text="扩展属性" Grid.Row="13"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="14">
+            <TextBlock Text="备注信息："/>
+            <TextBox x:Name="remarksTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="15">
+            <TextBlock Text="信用额度："/>
+            <TextBox x:Name="creditsTBox"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="16">
+            <Button Content="继续添加" Click="continueAddBtnClicked"/>
+            <Button Content="保存退出" Click="saveAndDropBtnClicked"/>
+            <Button Content="取消" Click="cancelBtnClicked"/>
+        </StackPanel>
+    </Grid>
+</Window>

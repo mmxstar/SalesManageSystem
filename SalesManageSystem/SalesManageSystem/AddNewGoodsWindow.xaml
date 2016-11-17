@@ -44,7 +44,19 @@
                     <TextBox x:Name="codeTBox" Grid.Row="1" Grid.Column="1"/>
                     <TextBlock Text="名称：" Grid.Row="1" Grid.Column="2"/>
                     <TextBox x:Name="nameTBox" Grid.Row="1" Grid.Column="3"/>
+                    <TextBlock Text="单位：" Grid.Row="2"/>
+                    <TextBox x:Name="unitTBox" Grid.Row="2" Grid.Column="1"/>
+                    <TextBlock Text="规格：" Grid.Row="2" Grid.Column="2"/>
+                    <TextBox x:Name="specificationTBox" Grid.Row="2" Grid.Column="3"/>
+                    <TextBlock Text="产地：" Grid.Row="3"/>
+                    <TextBox x:Name="productionPlaceTBox" Grid.Row="3" Grid.Column="1"/>
+                    <TextBlock Text="型号：" Grid.Row="3" Grid.Column="2"/>
+                    <TextBox x:Name="typeTBox" Grid.Row="3" Grid.Column="3"/>
                 </Grid>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <TextBlock Text="备注："/>
+                    <TextBox x:Name="remarksTBox" Width="160"></TextBox>
+                </StackPanel>
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
