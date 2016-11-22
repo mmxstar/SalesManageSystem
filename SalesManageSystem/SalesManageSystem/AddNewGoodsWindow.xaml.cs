@@ -28,5 +28,20 @@ namespace SalesManageSystem
         {
 
         }
+
+        private void ensureBtnClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cancelBtnClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void clearBtnClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -26,7 +26,7 @@
             <Button Content="货品资料" Click="goodsInfoBtnClicked"/>
             <Button Content="仓库资料" Grid.Column="1" Click="wareHouseInfoBtnClicked"/>
             <Button Content="供货商资料" Grid.Row="1" Click="supplierInfoBtnClicked"/>
-            <Button Content="客户资料" Grid.Row="1" Grid.Column="1" Click="customerInfoBtnClicked"/>
+            <Button Content="客户资料" Click="customerInfoBtnClicked"  Grid.Row="1" Grid.Column="1"/>
         </Grid>
     </Grid>
 </Page>

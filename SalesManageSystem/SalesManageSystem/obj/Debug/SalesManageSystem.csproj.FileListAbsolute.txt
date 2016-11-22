@@ -26,3 +26,15 @@ E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\WareHouseDefinitionWindow.g.cs
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\CreateWareHouseWindow.baml
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\WareHouseDefinitionWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\AddNewCustomerWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\AddNewGoodsWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\AddNewSupplierWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\CustomerInfoWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\GoodsInfoWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SupplierInfoWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\AddNewCustomerWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\AddNewGoodsWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\AddNewSupplierWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\CustomerInfoWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\GoodsInfoWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SupplierInfoWindow.baml

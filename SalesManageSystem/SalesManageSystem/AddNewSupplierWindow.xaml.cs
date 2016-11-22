@@ -23,5 +23,20 @@ namespace SalesManageSystem
         {
             InitializeComponent();
         }
+
+        private void continueAddBtnClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void saveAndDropBtnClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cancelBtnClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
