@@ -76,6 +76,12 @@
     <Compile Include="InventoryManagementPage.xaml.cs">
       <DependentUpon>InventoryManagementPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OrderFormWindow.xaml.cs">
+      <DependentUpon>OrderFormWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseFormWindow.xaml.cs">
+      <DependentUpon>PurchaseFormWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PurchaseManagementPage.xaml.cs">
       <DependentUpon>PurchaseManagementPage.xaml</DependentUpon>
     </Compile>
@@ -143,6 +149,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="OrderFormWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PurchaseFormWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PurchaseManagementPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
