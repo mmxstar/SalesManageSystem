@@ -1,0 +1,73 @@
+﻿<Window x:Class="SalesManageSystem.OrderFormWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManageSystem"
+        mc:Ignorable="d"
+        Title="订货单" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <TextBlock Text="订货单" FontSize="20"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="供应商:"/>
+                    <TextBox  x:Name="supplierTBox" Width="100"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="部门："/>
+                    <ComboBox x:Name="departmentComboBox"></ComboBox>
+                    <TextBlock Text="操作员："/>
+                    <TextBox x:Name="operatorTBox"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="经办人："/>
+                    <ComboBox x:Name="managerComboBox"></ComboBox>
+                    <TextBlock Text="发票类型："/>
+                    <TextBox x:Name="invoiceTypeTBox"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="订单备注:"/>
+                    <TextBox x:Name="remarkTBox"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="开单日期:"/>
+                    <TextBox x:Name="createTimeTBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="订货单号:"/>
+                    <TextBox x:Name="orderIDTBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="包装方式:"/>
+                    <ComboBox x:Name="packingComboBox"/>
+                    
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="到货日期:"/>
+                    <TextBox x:Name="arriveTimeTBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="到货地点:"/>
+                    <TextBox x:Name="arriveAddressTBox"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <DataGrid Grid.Row="1"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button Content="保存" Click="saveBtnClicked"/>
+            <Button Content="取消" Click="cancelBtnClicked"/>
+        </StackPanel>
+    </Grid>
+</Window>
