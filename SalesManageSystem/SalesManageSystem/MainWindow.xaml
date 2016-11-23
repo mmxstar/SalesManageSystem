@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesManageSystem"
         mc:Ignorable="d"
-        Title="主界面" Height="350" Width="500">
+        Title="主界面" Height="640" Width="960">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -14,7 +14,6 @@
         </Grid.RowDefinitions>
         <TextBlock x:Name="currentItemName" Text="基础资料" HorizontalAlignment="Right" Margin="0,0,10,0"/>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <Image Source="Assets/s05.jpg"/>
             <TextBlock Text="进销存销服管理系统" FontSize="20" Margin="10,3,0,0"/>
         </StackPanel>
         <Grid Grid.Row="2">

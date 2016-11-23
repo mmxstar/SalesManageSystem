@@ -38,3 +38,9 @@ E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\CustomerInfoWindow.baml
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\GoodsInfoWindow.baml
 E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\SupplierInfoWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\OrderFormWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\PurchaseFormWindow.g.cs
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\bin\Debug\MySql.Data.dll
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\OrderFormWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\PurchaseFormWindow.baml
+E:\GitRepository\SalesManageSystem\SalesManageSystem\SalesManageSystem\obj\Debug\App.baml

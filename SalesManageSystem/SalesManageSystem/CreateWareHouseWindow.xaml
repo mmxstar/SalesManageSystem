@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesManageSystem"
         mc:Ignorable="d"
-        Title="CreateWareHouseWindow" Height="300" Width="300">
+        Title="CreateWareHouseWindow" Height="300" Width="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBox Text="仓库是管理所有库存和进销记录的关键，请谨慎设置，要添加一个仓库，请为仓库确定永久使用的代码和名称，然后单击‘确定’按钮；如取消新建，请单击‘取消’按钮。" TextWrapping="Wrap"/>
+        <TextBlock Style="{StaticResource tbReportContent}" Text="仓库是管理所有库存和进销记录的关键，请谨慎设置，要添加一个仓库，请为仓库确定永久使用的代码和名称，然后单击‘确定’按钮；如取消新建，请单击‘取消’按钮。" TextWrapping="Wrap"/>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
             <Image Source="Assets/s05.jpg" Width="50" Height="50"/>
             <Grid>
@@ -25,12 +25,12 @@
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="仓库代码：" HorizontalAlignment="Center"/>
-                <TextBox x:Name="wareHouseIdTBox" Grid.Column="1" Width="100"/>
-                <TextBlock Text="仓库名称：" Grid.Row="1" HorizontalAlignment="Center"/>
-                <TextBox x:Name="wareHouseNameTBox"  Grid.Row="1" Grid.Column="1" Width="100"/>
-                <TextBlock Text="备注信息：" Grid.Row="2" HorizontalAlignment="Center"/>
-                <TextBox x:Name="remarks"  Grid.Row="2" Grid.Column="1" Width="100"/>
+                <TextBlock Text="仓库代码：" Style="{StaticResource tbReportHeader}"/>
+                <TextBox x:Name="wareHouseIdTBox" Grid.Column="1" Style="{StaticResource tbAdd}"/>
+                <TextBlock Text="仓库名称：" Grid.Row="1" Style="{StaticResource tbReportHeader}"/>
+                <TextBox x:Name="wareHouseNameTBox"  Grid.Row="1" Grid.Column="1" Style="{StaticResource tbAdd}"/>
+                <TextBlock Text="备注信息：" Grid.Row="2" Style="{StaticResource tbReportHeader}"/>
+                <TextBox x:Name="remarks"  Grid.Row="2" Grid.Column="1" Style="{StaticResource tbAdd}"/>
             </Grid>
         </StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal">

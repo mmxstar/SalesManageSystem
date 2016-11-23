@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SalesManageSystem.Model;
+using SalesManageSystem.Dao;
 
 namespace SalesManageSystem
 {
@@ -26,7 +28,22 @@ namespace SalesManageSystem
 
         private void ensureBtnClicked(object sender, RoutedEventArgs e)
         {
+            if (wareHouseIdTBox.Text.Length == 0)
+            {
+                wareHouseIdTBox.Text = "仓库代码不能为空";
+            }
+            if (wareHouseNameTBox.Text.Length == 0)
+            {
+                wareHouseIdTBox.Text = "仓库名称不能为空";
+            }
 
+            Warehouse warehouse = new Warehouse();
+            warehouse.Name = wareHouseNameTBox.Text;
+            warehouse.Code = wareHouseIdTBox.Text;
+            warehouse.Remark = remarks.Text;
+
+            WarehouseDao dao = new WarehouseDao();
+            dao.AddWareHouse(warehouse);
         }
 
         private void cancelBtnClicked(object sender, RoutedEventArgs e)

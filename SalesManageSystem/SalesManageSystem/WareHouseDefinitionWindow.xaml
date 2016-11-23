@@ -9,11 +9,11 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <TextBlock Text="仓库定义"/>
-        <DataGrid AutoGenerateColumns="True" Grid.Row="1">
+        <DataGrid x:Name="warehoseDataGrid" AutoGenerateColumns="True" Grid.Row="1">
             
         </DataGrid>
         <StackPanel Orientation="Horizontal" Grid.Row="2">

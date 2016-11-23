@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SalesManageSystem.Model;
+using SalesManageSystem.Dao;
 
 namespace SalesManageSystem
 {
@@ -22,6 +24,9 @@ namespace SalesManageSystem
         public WareHouseDefinitionWindow()
         {
             InitializeComponent();
+
+            WarehouseDao warehouseDao = new WarehouseDao();
+            warehoseDataGrid.ItemsSource = warehouseDao.SelectAll();
         }
 
         //private CreateWareHouseWindow mCreateWareHourcseWindow;
@@ -32,6 +37,7 @@ namespace SalesManageSystem
            // }
            // mCreateWareHourcseWindow.Show();
             CreateWareHouseWindow cwhWindow = new CreateWareHouseWindow();
+            cwhWindow.Owner = this;
             cwhWindow.Show();
         }
     }

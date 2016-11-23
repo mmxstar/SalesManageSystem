@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\SysWOW64\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -70,12 +74,17 @@
     <Compile Include="CustomerInfoWindow.xaml.cs">
       <DependentUpon>CustomerInfoWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dao\LoginDao.cs" />
+    <Compile Include="Dao\WarehouseDao.cs" />
+    <Compile Include="DataBaseConnection\DataBaseConnection.cs" />
     <Compile Include="GoodsInfoWindow.xaml.cs">
       <DependentUpon>GoodsInfoWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="InventoryManagementPage.xaml.cs">
       <DependentUpon>InventoryManagementPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\Warehouse.cs" />
     <Compile Include="OrderFormWindow.xaml.cs">
       <DependentUpon>OrderFormWindow.xaml</DependentUpon>
     </Compile>
