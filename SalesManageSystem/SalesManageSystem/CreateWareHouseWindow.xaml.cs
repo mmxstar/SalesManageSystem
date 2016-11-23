@@ -31,10 +31,12 @@ namespace SalesManageSystem
             if (wareHouseIdTBox.Text.Length == 0)
             {
                 wareHouseIdTBox.Text = "仓库代码不能为空";
+                return;
             }
             if (wareHouseNameTBox.Text.Length == 0)
             {
-                wareHouseIdTBox.Text = "仓库名称不能为空";
+                wareHouseNameTBox.Text = "仓库名称不能为空";
+                return;
             }
 
             Warehouse warehouse = new Warehouse();
@@ -43,12 +45,19 @@ namespace SalesManageSystem
             warehouse.Remark = remarks.Text;
 
             WarehouseDao dao = new WarehouseDao();
-            dao.AddWareHouse(warehouse);
+            if (dao.AddWareHouse(warehouse))
+            {
+                MessageBoxResult result = MessageBox.Show(this, "添加成功");
+                this.Close();
+            }else
+            {
+                MessageBoxResult result = MessageBox.Show(this, "添加失败");
+            }
         }
 
         private void cancelBtnClicked(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }

@@ -53,7 +53,7 @@ namespace SalesManageSystem.Dao
             return wareHouseList;
         }
 
-        public void AddWareHouse(Warehouse warehouse)
+        public bool AddWareHouse(Warehouse warehouse)
         {
             MySqlConnection mySqlConnection = mDBConnection.GetConnection();
             mySqlConnection.Open();
@@ -85,7 +85,11 @@ namespace SalesManageSystem.Dao
                     cmd.Parameters.Add(parameter);
                 }
             }
-            cmd.ExecuteNonQuery();
+            bool bSuccess = false; 
+            int reCode = cmd.ExecuteNonQuery();
+            if(reCode == 1) { bSuccess = true; }
+
+            return bSuccess;
         }
     }
 }
