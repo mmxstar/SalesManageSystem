@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesManageSystem"
         mc:Ignorable="d"
-        Title="GoodsInfoWindow" Height="300" Width="300">
+        Title="货品资料" Height="300" Width="300">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -13,42 +13,39 @@
         </Grid.RowDefinitions>
         <TextBlock Text="货品资料" HorizontalAlignment="Center"/>
         <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="2*"/>
-            </Grid.ColumnDefinitions>
-            <TreeView >
-            </TreeView>
-            <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="2*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Text="编号"/>
-                    <TextBox x:Name="idTBox" Grid.Column="1"/>
-                    <TextBlock Text="名称" Grid.Column="2"/>
-                    <TextBox x:Name="nameTBox" Grid.Column="3"/>
-                    <Button Content="查询" Grid.Column="4"/>
-                    <TextBlock Text="条码" Grid.Row="1"/>
-                    <TextBox x:Name="codeTBox" Grid.Column="1" Grid.Row="1"/>
-                    <Button Content="清除" Grid.Column="4" Grid.Row="1"/>
-                </Grid>
-                <DataGrid Grid.Row="1">
-                    
-                </DataGrid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="编号"/>
+                <TextBox x:Name="idTBox" Grid.Column="1"/>
+                <TextBlock Text="名称" Grid.Column="2"/>
+                <TextBox x:Name="nameTBox" Grid.Column="3"/>
+                <Button Content="查询" Grid.Column="4"/>
+                <TextBlock Text="条码" Grid.Row="1"/>
+                <TextBox x:Name="codeTBox" Grid.Column="1" Grid.Row="1"/>
+                <Button Content="清除" Grid.Column="4" Grid.Row="1"/>
             </Grid>
+            <DataGrid x:Name="goodsDataGrid" Grid.Row="1" AutoGenerateColumns="True">
+                
+            </DataGrid>
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <Button Content="添加新货品" Click="addNewGoods_BtnClicked"/>
+                <Button Content="编辑选中商品" Click="modifyGoods_BtnClicked"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

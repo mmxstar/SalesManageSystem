@@ -74,6 +74,7 @@
     <Compile Include="CustomerInfoWindow.xaml.cs">
       <DependentUpon>CustomerInfoWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dao\GoodsDao.cs" />
     <Compile Include="Dao\LoginDao.cs" />
     <Compile Include="Dao\WarehouseDao.cs" />
     <Compile Include="DataBaseConnection\DataBaseConnection.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="InventoryManagementPage.xaml.cs">
       <DependentUpon>InventoryManagementPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Goods.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\Warehouse.cs" />
     <Compile Include="OrderFormWindow.xaml.cs">

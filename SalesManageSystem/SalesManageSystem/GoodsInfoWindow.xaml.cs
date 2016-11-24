@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SalesManageSystem.Dao;
+using SalesManageSystem.Model;
 
 namespace SalesManageSystem
 {
@@ -22,6 +24,20 @@ namespace SalesManageSystem
         public GoodsInfoWindow()
         {
             InitializeComponent();
+
+            GoodsDao goodsDao = new GoodsDao();
+            goodsDataGrid.ItemsSource = goodsDao.SelectAll();
+        }
+
+        private void addNewGoods_BtnClicked(object sender, RoutedEventArgs e)
+        {
+            AddNewGoodsWindow addNewGoodsWindow = new AddNewGoodsWindow();
+            addNewGoodsWindow.Show();
+        }
+
+        private void modifyGoods_BtnClicked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

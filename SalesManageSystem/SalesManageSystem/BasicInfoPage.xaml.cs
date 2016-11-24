@@ -27,7 +27,8 @@ namespace SalesManageSystem
 
         private void goodsInfoBtnClicked(object sender, RoutedEventArgs e)
         {
-
+            GoodsInfoWindow goodsInfoWindow = new GoodsInfoWindow();
+            goodsInfoWindow.Show();
         }
 
         private void wareHouseInfoBtnClicked(object sender, RoutedEventArgs e)

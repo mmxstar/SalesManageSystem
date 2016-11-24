@@ -12,88 +12,46 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="20"/>
-                </Grid.RowDefinitions>
-                <TextBlock Text="基本属性"/>
-                <Grid Grid.Row="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="3*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Text="货号："/>
-                    <TextBox x:Name="goodsNumTBox" Grid.Column="1"/>
-                    <TextBlock Text="类别：" Grid.Column="2"/>
-                    <TextBox x:Name="categoryTBox" Grid.Column="3"/>
-                    <TextBlock Text="条码：" Grid.Row="1"/>
-                    <TextBox x:Name="codeTBox" Grid.Row="1" Grid.Column="1"/>
-                    <TextBlock Text="名称：" Grid.Row="1" Grid.Column="2"/>
-                    <TextBox x:Name="nameTBox" Grid.Row="1" Grid.Column="3"/>
-                    <TextBlock Text="单位：" Grid.Row="2"/>
-                    <TextBox x:Name="unitTBox" Grid.Row="2" Grid.Column="1"/>
-                    <TextBlock Text="规格：" Grid.Row="2" Grid.Column="2"/>
-                    <TextBox x:Name="specificationTBox" Grid.Row="2" Grid.Column="3"/>
-                    <TextBlock Text="产地：" Grid.Row="3"/>
-                    <TextBox x:Name="productionPlaceTBox" Grid.Row="3" Grid.Column="1"/>
-                    <TextBlock Text="型号：" Grid.Row="3" Grid.Column="2"/>
-                    <TextBox x:Name="typeTBox" Grid.Row="3" Grid.Column="3"/>
-                </Grid>
-                <StackPanel Grid.Row="2" Orientation="Horizontal">
-                    <TextBlock Text="备注："/>
-                    <TextBox x:Name="remarksTBox" Width="160"></TextBox>
-                </StackPanel>
-            </Grid>
-            <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="基本属性"/>
+            <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="价格属性："/>
-                <StackPanel Grid.Row="1" Orientation="Horizontal">
-                    <TextBlock Text="一级进价:"/>
-                    <TextBlock x:Name="firstLevelPurPriceTBox"/>
-                </StackPanel>
-                <StackPanel Grid.Row="2" Orientation="Horizontal">
-                    <TextBlock Text="二级进价:"/>
-                    <TextBlock x:Name="secondLevelPurPriceTBox"/>
-                </StackPanel>
-                <StackPanel Grid.Row="3" Orientation="Horizontal">
-                    <TextBlock Text="三级进价:"/>
-                    <TextBlock x:Name="thirdLevelPurPriceTBox"/>
-                </StackPanel>
-                <StackPanel Grid.Row="4" Orientation="Horizontal">
-                    <TextBlock Text="一级销价:"/>
-                    <TextBlock x:Name="firstLevelSellingPriceTBox"/>
-                </StackPanel>
-                <StackPanel Grid.Row="5" Orientation="Horizontal">
-                    <TextBlock Text="二级销价:"/>
-                    <TextBlock x:Name="secondLevelSellingPriceTBox"/>
-                </StackPanel>
-                <StackPanel Grid.Row="6" Orientation="Horizontal">
-                    <TextBlock Text="三级销价:"/>
-                    <TextBlock x:Name="thirdLevelSellingPriceTBox"/>
-                </StackPanel>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="货号："/>
+                <TextBox x:Name="goodsNumTBox" Grid.Column="1"/>
+                <TextBlock Text="类别：" Grid.Column="2"/>
+                <TextBox x:Name="categoryTBox" Grid.Column="3"/>
+                <TextBlock Text="条码：" Grid.Row="1"/>
+                <TextBox x:Name="codeTBox" Grid.Row="1" Grid.Column="1"/>
+                <TextBlock Text="名称：" Grid.Row="1" Grid.Column="2"/>
+                <TextBox x:Name="nameTBox" Grid.Row="1" Grid.Column="3"/>
+                <TextBlock Text="单位：" Grid.Row="2"/>
+                <TextBox x:Name="unitTBox" Grid.Row="2" Grid.Column="1"/>
+                <TextBlock Text="规格：" Grid.Row="2" Grid.Column="2"/>
+                <TextBox x:Name="specificationTBox" Grid.Row="2" Grid.Column="3"/>
+                <TextBlock Text="产地：" Grid.Row="3"/>
+                <TextBox x:Name="productionPlaceTBox" Grid.Row="3" Grid.Column="1"/>
+                <TextBlock Text="型号：" Grid.Row="3" Grid.Column="2"/>
+                <TextBox x:Name="versionTBox" Grid.Row="3" Grid.Column="3"/>
             </Grid>
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <TextBlock Text="备注："/>
+                <TextBox x:Name="remarksTBox" Width="160"></TextBox>
+            </StackPanel>
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
             <Button Content="确定" Click="ensureBtnClicked"/>
